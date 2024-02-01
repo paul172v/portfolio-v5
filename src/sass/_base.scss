@@ -1,0 +1,23 @@
+@mixin background-gradient {
+  background: linear-gradient(
+    144deg,
+    rgba(102, 111, 140, 1) 0%,
+    rgba(215, 196, 164, 1) 40%,
+    rgba(140, 97, 68, 1) 98%
+  );
+}
+
+@mixin box-glass {
+  background: rgba(66, 55, 49, 0.63);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.3px);
+  -webkit-backdrop-filter: blur(6.3px);
+  border: 1px solid rgba(66, 55, 49, 0.61);
+}
+
+$color-dark-gray: rgb(23, 23, 23);
+
+$color-primary: rgb(66, 55, 49);
+
+$font-color-bone: rgb(241, 234, 228);
+$font-color-blue: rgba(102, 111, 140, 1);

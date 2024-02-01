@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+a,
+button {
+  font-size: 62.5%;
+  font-family: "Lora", serif;
+}

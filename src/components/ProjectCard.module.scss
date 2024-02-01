@@ -1,0 +1,126 @@
+@import "../sass/base";
+
+.card {
+  min-height: 97rem;
+  width: 50rem;
+  max-width: 30%;
+  background-color: $color-primary;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    color: $font-color-bone;
+    font-size: 2.4rem;
+    margin-top: 1rem;
+  }
+
+  a {
+    color: $font-color-bone;
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
+
+  a:hover {
+    color: $font-color-blue;
+  }
+}
+
+.photo {
+  width: 90%;
+  margin-top: 2rem;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.u-bold {
+  font-weight: 800;
+  margin-top: 2rem;
+  color: $font-color-bone;
+  font-size: 1.8rem;
+}
+
+.key-features {
+  color: $font-color-bone;
+  font-size: 1.8rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 2rem;
+}
+
+.li {
+  margin: 0.5rem 1.25rem;
+}
+
+.description,
+.description-small,
+.description-tiny {
+  color: $font-color-bone;
+  margin-top: 2rem;
+  padding: 0 2rem;
+}
+
+.description {
+  font-size: 2rem;
+}
+
+.description-small {
+  font-size: 1.8rem;
+}
+
+.description-tiny {
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1450px) {
+  .card {
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .card {
+    max-width: 100%;
+    max-height: auto;
+    height: auto;
+    min-height: auto;
+    padding-bottom: 4rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .card {
+    min-height: auto;
+    max-height: auto;
+    padding-bottom: 4rem;
+  }
+
+  .description-tiny {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  h2 {
+    color: $font-color-bone;
+    font-size: 2rem;
+    margin-top: 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  a {
+    color: $font-color-bone;
+    font-size: 1.8rem;
+    margin-top: 1rem;
+  }
+}
