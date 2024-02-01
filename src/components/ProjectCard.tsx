@@ -29,19 +29,31 @@ const ProjectCard: React.FC<T> = (props) => {
       />
       <h2>{props.title}</h2>
       {!props.liveSite2Link ? (
-        <a href={props.liveSiteLink}>Live Site</a>
+        <a href={props.liveSiteLink} target="_blank">
+          Live Site
+        </a>
       ) : (
         <>
-          <a href={props.liveSiteLink}>{props.liveSiteLabel}</a>
-          <a href={props.liveSite2Link}>{props.liveSite2Label}</a>
+          <a href={props.liveSiteLink} target="_blank">
+            {props.liveSiteLabel}
+          </a>
+          <a href={props.liveSite2Link} target="_blank">
+            {props.liveSite2Label}
+          </a>
         </>
       )}
       {!props.gitFront2Link ? (
-        <a href={props.gitFrontLink}>GitHub Frontend</a>
+        <a href={props.gitFrontLink} target="_blank">
+          GitHub Frontend
+        </a>
       ) : (
         <>
-          <a href={props.gitFrontLink}>{props.gitFrontLabel}</a>
-          <a href={props.gitFront2Link}>{props.gitFront2Label}</a>
+          <a href={props.gitFrontLink} target="_blank">
+            {props.gitFrontLabel}
+          </a>
+          <a href={props.gitFront2Link} target="_blank">
+            {props.gitFront2Label}
+          </a>
         </>
       )}
       {props.gitBack && <a href={props.gitBack}>GitHub Backend</a>}
