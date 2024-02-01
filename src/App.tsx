@@ -228,8 +228,10 @@ function App() {
               <h2>Based in Scotland</h2>
               <h2>Available for Work</h2>
               <h2>Able to relocate</h2>
-              <a href="#">My GitHub</a>
-              <a href="#">My LinkedIn</a>
+              <a href="https://github.com/paul172v">My GitHub</a>
+              <a href="https://www.linkedin.com/in/paul-harris-86677b1ba/">
+                My LinkedIn
+              </a>
               {/* <a href="#">Send me an Email</a> */}
             </div>
             <div className={classes["skills-icons-box"]}>
@@ -315,8 +317,10 @@ function App() {
             <h2>Based in Scotland</h2>
             <h2>Available for Work</h2>
             <h2>Able to relocate</h2>
-            <a href="#">My GitHub</a>
-            <a href="#">My LinkedIn</a>
+            <a href="https://github.com/paul172v">My GitHub</a>
+            <a href="https://www.linkedin.com/in/paul-harris-86677b1ba/">
+              My LinkedIn
+            </a>
             {/* <a href="#">Send me an Email</a> */}
           </section>
           <section className={classes["section-skills--mobile"]}>
