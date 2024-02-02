@@ -18,7 +18,7 @@ const HeaderMobileOpen: React.FC<{ onCloseMobileNav: () => void }> = (
       </div>
       <ul className={classes["nav-links-wrapper"]}>
         <Link
-          offset={-785}
+          offset={0}
           to="anchor-introduction"
           smooth={true}
           duration={1000}
@@ -29,7 +29,7 @@ const HeaderMobileOpen: React.FC<{ onCloseMobileNav: () => void }> = (
           </li>
         </Link>
         <Link
-          offset={-835}
+          offset={0}
           to="anchor-about"
           smooth={true}
           duration={1000}
@@ -40,7 +40,7 @@ const HeaderMobileOpen: React.FC<{ onCloseMobileNav: () => void }> = (
           </li>
         </Link>
         <Link
-          offset={-835}
+          offset={0}
           to="anchor-projects"
           smooth={true}
           duration={1000}
@@ -51,7 +51,7 @@ const HeaderMobileOpen: React.FC<{ onCloseMobileNav: () => void }> = (
           </li>
         </Link>
         <Link
-          offset={-815}
+          offset={0}
           to="anchor-contact"
           smooth={true}
           duration={1000}
