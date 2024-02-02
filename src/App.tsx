@@ -228,8 +228,18 @@ function App() {
               <h2>Based in Scotland</h2>
               <h2>Available for Work</h2>
               <h2>Able to relocate</h2>
-              <a href="https://github.com/paul172v">My GitHub</a>
-              <a href="https://www.linkedin.com/in/paul-harris-86677b1ba/">
+              <a
+                href="https://github.com/paul172v"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                My GitHub
+              </a>
+              <a
+                href="https://www.linkedin.com/in/paul-harris-86677b1ba/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 My LinkedIn
               </a>
               {/* <a href="#">Send me an Email</a> */}
@@ -317,8 +327,18 @@ function App() {
             <h2>Based in Scotland</h2>
             <h2>Available for Work</h2>
             <h2>Able to relocate</h2>
-            <a href="https://github.com/paul172v">My GitHub</a>
-            <a href="https://www.linkedin.com/in/paul-harris-86677b1ba/">
+            <a
+              href="https://github.com/paul172v"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              My GitHub
+            </a>
+            <a
+              href="https://www.linkedin.com/in/paul-harris-86677b1ba/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               My LinkedIn
             </a>
             {/* <a href="#">Send me an Email</a> */}
