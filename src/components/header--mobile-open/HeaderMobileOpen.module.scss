@@ -24,6 +24,9 @@
     z-index: 9999;
 
     .nav-links-wrapper {
+      display: flex;
+      gap: 0 5rem;
+      list-style: none;
       flex-direction: column;
       text-align: center;
       width: 100vw;
@@ -33,6 +36,11 @@
 
     .nav-link {
       margin-top: 2rem;
+      background-color: transparent;
+      border: none;
+      color: $font-color-bone;
+      font-size: 3rem;
+      border-bottom: 1px solid $font-color-bone;
     }
   }
 
