@@ -1,0 +1,194 @@
+@import "../../sass/base";
+
+.hero {
+  background-color: white;
+  max-height: 860px;
+  width: 100%;
+  background-image: url("./background2.png");
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: repeat(24, 1fr);
+  grid-template-rows: repeat(6, 143.33px);
+}
+
+.my-info-box {
+  align-self: flex-end;
+  justify-self: flex-end;
+  height: 100%;
+  width: 100%;
+  grid-column: 2/9;
+  grid-row: 2/7;
+  @include box-glass;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $font-color-bone;
+
+  .logo {
+    height: 20rem;
+    margin: 4rem 0 2rem 0;
+    border: 1px solid $font-color-bone;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+  }
+
+  h1,
+  h2,
+  a {
+    margin-top: 1.5rem;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  a {
+    color: $font-color-bone;
+    font-size: 2.5rem;
+  }
+
+  a:hover {
+    color: $color-primary;
+  }
+}
+
+.skills-icons-box {
+  height: auto;
+  min-height: 45rem;
+  width: 100%;
+  max-width: 50rem;
+  grid-column: 17/24;
+  grid-row: 1/2;
+  @include box-glass;
+  margin-top: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+
+  .icon-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .icon {
+    font-size: 6rem;
+    margin: 1rem 2rem;
+    color: $font-color-bone;
+  }
+
+  #chatGPT {
+    height: 6rem;
+    width: 6rem;
+  }
+
+  .icon-label {
+    color: $font-color-bone;
+    font-size: 1.6rem;
+  }
+}
+
+.avatar {
+  grid-column: 9/12;
+  grid-row: 3/7;
+  height: 100%;
+}
+
+@media screen and (max-width: 1920px) {
+  .hero {
+    width: 100vw;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .my-info-box {
+    grid-column: 4/12;
+  }
+
+  .skills-icons-box {
+    display: none;
+  }
+
+  .avatar {
+    grid-column: 12/25;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .my-info-box {
+    grid-column: 2/12;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .hero {
+    display: flex;
+    align-items: flex-end;
+  }
+  .my-info-box {
+    padding: 3rem 0;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    h1 {
+      font-size: 2rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    a {
+      color: $font-color-bone;
+      font-size: 1.5rem;
+    }
+  }
+
+  .avatar {
+    grid-column: 6/21;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .hero {
+    width: 100vw;
+  }
+
+  .hero {
+    display: flex;
+  }
+
+  .my-info-box {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero {
+    max-height: 70vh;
+  }
+
+  .avatar {
+    max-width: 100%;
+  }
+}

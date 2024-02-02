@@ -1,0 +1,48 @@
+@import "../../sass/base";
+
+.header-mobile--closed {
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  .header-mobile--closed {
+    border-bottom: 1px solid $font-color-blue;
+  }
+
+  .header-mobile--closed {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 6rem;
+    background-color: $color-primary;
+    color: $font-color-bone;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+  }
+
+  .u-row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    margin: 2rem 0;
+  }
+
+  .btn-open-modal {
+    height: 4rem;
+    width: 4rem;
+    margin-right: 2rem;
+    background-color: $font-color-bone;
+    color: $color-primary;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btn-open-modal:hover {
+    cursor: pointer;
+  }
+}

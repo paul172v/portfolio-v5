@@ -1,0 +1,70 @@
+@import "../../sass/base";
+
+.section-about {
+  background-color: $color-primary;
+  color: $font-color-bone;
+  width: 100%;
+  padding: 3rem 30% 8rem 30%;
+
+  h3 {
+    font-size: 3rem;
+    margin-top: 2rem;
+  }
+
+  p {
+    font-size: 2rem;
+  }
+
+  p,
+  li {
+    line-height: 2.5rem;
+  }
+
+  ul {
+    font-size: 2rem;
+  }
+
+  li {
+    margin-top: 0.25rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .section-about {
+    background-color: $color-primary;
+    color: $font-color-bone;
+    width: 100%;
+    padding: 3rem 10% 8rem 10%;
+
+    h3 {
+      font-size: 3rem;
+      margin-top: 2rem;
+    }
+
+    p {
+      font-size: 2rem;
+    }
+
+    p,
+    li {
+      line-height: 2.5rem;
+    }
+
+    ul {
+      font-size: 2rem;
+    }
+
+    li {
+      margin-top: 0.25rem;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .section-about {
+    h3 {
+      font-size: 2.5rem;
+      margin-top: 2rem;
+    }
+  }
+}

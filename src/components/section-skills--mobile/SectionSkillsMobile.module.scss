@@ -1,0 +1,53 @@
+@import "../../sass/base";
+
+.section-skills--mobile {
+  display: none;
+}
+
+@media screen and (max-width: 1350px) {
+  .section-skills--mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $font-color-bone;
+    color: $color-primary;
+    height: auto;
+    width: 100%;
+    padding: 2rem 4rem;
+
+    .skills-icons-box--mobile {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      max-height: 90%;
+      width: 100%;
+      gap: 1rem 2rem;
+    }
+
+    .icon-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @include box-glass;
+      padding-bottom: 1rem;
+    }
+
+    .icon {
+      font-size: 6rem;
+      margin: 1rem 2rem;
+      color: $font-color-bone;
+    }
+
+    #chatGPT {
+      height: 6rem;
+      width: 6rem;
+    }
+
+    .icon-label {
+      color: $font-color-bone;
+      font-size: 1.6rem;
+    }
+  }
+}
