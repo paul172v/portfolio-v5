@@ -1,30 +1,77 @@
-# React + TypeScript + Vite
+# Paul Harris Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the repository for my personal portfolio website, showcasing my skills and projects as a Fullstack MERN Developer. This site is a comprehensive display of my journey, capabilities, and the technologies I use.
 
-Currently, two official plugins are available:
+Visit the live site: [Paul Harris Portfolio](https://paul-172v-portfolio.netlify.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Table of Contents
 
-## Expanding the ESLint configuration
+- [About the Project](#about-the-project)
+- [Technologies Used](#technologies-used)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [License](#license)
+- [Contact](#contact)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## About the Project
 
-- Configure the top-level `parserOptions` property like this:
+The Paul Harris Portfolio Website is designed to showcase my expertise in full-stack development, with a focus on the MERN stack and TypeScript. The website features:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+- My professional journey and skills in web development.
+- Projects I have worked on, demonstrating my capabilities in building full-stack applications.
+- Continuous learning journey with a focus on modern web technologies.
+
+## Technologies Used
+
+- React.js
+- Node.js
+- Express.js
+- MongoDB
+- TypeScript
+- SCSS
+- Responsive Web Design
+
+## Getting Started
+
+To get a local copy up and running, follow these simple steps:
+
+### Prerequisites
+
+Ensure you have npm installed:
+
+```bash
+npm install npm@latest -g
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/paul172v/portfolio-v5.git
+   ```
+2. Install NPM packages:
+   ```bash
+   npm install
+   ```
+
+## Usage
+
+To start the project, run the following command in your terminal:
+
+```bash
+npm start
+```
+
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+## Contact
+
+Paul Harris - [GitHub Profile](https://github.com/paul172v)
+
+Project Link: [https://github.com/paul172v/portfolio-v5](https://github.com/paul172v/portfolio-v5)
+
+---
+
+This README is a brief overview of the Paul Harris Portfolio Website, its features, and how to set it up and contribute. For any further queries or discussions, feel free to reach out through my GitHub profile.
