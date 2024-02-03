@@ -2,10 +2,8 @@
 
 .section-skills--mobile {
   display: none;
-}
 
-@media screen and (max-width: 1350px) {
-  .section-skills--mobile {
+  @media screen and (max-width: 1350px) {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -24,30 +22,30 @@
       max-height: 90%;
       width: 100%;
       gap: 1rem 2rem;
-    }
 
-    .icon-wrapper {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      @include box-glass;
-      padding-bottom: 1rem;
-    }
+      .icon-wrapper {
+        @include box-glass;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 1rem;
 
-    .icon {
-      font-size: 6rem;
-      margin: 1rem 2rem;
-      color: $font-color-bone;
-    }
+        .icon {
+          font-size: 6rem;
+          margin: 1rem 2rem;
+          color: $font-color-bone;
+        }
 
-    #chatGPT {
-      height: 6rem;
-      width: 6rem;
-    }
+        #chatGPT {
+          height: 6rem;
+          width: 6rem;
+        }
 
-    .icon-label {
-      color: $font-color-bone;
-      font-size: 1.6rem;
+        .icon-label {
+          font-size: 1.6rem;
+          color: $font-color-bone;
+        }
+      }
     }
   }
 }

@@ -19,5 +19,24 @@
     align-items: center;
     justify-content: center;
     gap: 4rem;
+
+    // Example: Hover effect for project cards
+    .project-card {
+      transition: transform 0.3s ease-in-out;
+
+      &:hover {
+        transform: scale(1.05);
+        cursor: pointer;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      gap: 2rem;
+
+      // Adjust styles for project cards on smaller screens
+      .project-card {
+        // Specific styles for smaller screens
+      }
+    }
   }
 }

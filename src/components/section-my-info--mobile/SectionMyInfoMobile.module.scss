@@ -2,10 +2,8 @@
 
 .section-my-info--mobile {
   display: none;
-}
 
-@media screen and (max-width: 850px) {
-  .section-my-info--mobile {
+  @media screen and (max-width: 850px) {
     background-color: $color-primary;
     color: $font-color-bone;
     width: 100%;
@@ -20,6 +18,7 @@
     a {
       margin-top: 1.5rem;
     }
+
     h1 {
       font-size: 3rem;
     }
@@ -31,42 +30,24 @@
     a {
       color: $font-color-bone;
       font-size: 2.5rem;
+      &:hover {
+        color: $font-color-blue;
+      }
     }
 
-    a:hover {
-      color: $font-color-blue;
-    }
-  }
-}
+    @media screen and (max-width: 500px) {
+      h1 {
+        font-size: 2.5rem;
+        text-align: center;
+      }
 
-@media screen and (max-width: 500px) {
-  .section-my-info--mobile {
-    background-color: $color-primary;
-    color: $font-color-bone;
-    width: 100%;
-    padding: 3rem 4rem 8rem 4rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+      h2 {
+        font-size: 2rem;
+      }
 
-    h1,
-    h2,
-    a {
-      margin-top: 1.5rem;
-    }
-    h1 {
-      font-size: 2.5rem;
-      text-align: center;
-    }
-
-    h2 {
-      font-size: 2rem;
-    }
-
-    a {
-      color: $font-color-bone;
-      font-size: 2rem;
+      a {
+        font-size: 2rem;
+      }
     }
   }
 }

@@ -6,28 +6,48 @@
   max-width: 30%;
   background-color: $color-primary;
   border-radius: 8px;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media screen and (max-width: 1450px) {
+    max-width: 50%;
+  }
+
+  @media screen and (max-width: 1080px) {
+    max-width: 100%;
+    min-height: auto;
+    padding-bottom: 4rem;
+  }
+
+  @media screen and (max-width: 750px) {
+    min-height: auto;
+  }
 
   h2 {
     color: $font-color-bone;
     font-size: 2.4rem;
     margin-top: 1rem;
+
+    @media screen and (max-width: 400px) {
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
   }
 
   a {
     color: $font-color-bone;
     font-size: 2rem;
     margin-top: 1rem;
-  }
 
-  a:hover {
-    color: $font-color-blue;
+    &:hover {
+      color: $font-color-blue;
+    }
+
+    @media screen and (max-width: 400px) {
+      font-size: 1.8rem;
+    }
   }
 }
 
@@ -35,10 +55,6 @@
   width: 90%;
   margin-top: 2rem;
   border-radius: 4px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
 }
 
 .u-bold {
@@ -67,6 +83,12 @@
   color: $font-color-bone;
   margin-top: 2rem;
   padding: 0 2rem;
+
+  @media screen and (max-width: 750px) {
+    &.description-tiny {
+      font-size: 1.8rem;
+    }
+  }
 }
 
 .description {
@@ -79,48 +101,4 @@
 
 .description-tiny {
   font-size: 1.5rem;
-}
-
-@media screen and (max-width: 1450px) {
-  .card {
-    max-width: 50%;
-  }
-}
-
-@media screen and (max-width: 1080px) {
-  .card {
-    max-width: 100%;
-    max-height: auto;
-    height: auto;
-    min-height: auto;
-    padding-bottom: 4rem;
-  }
-}
-
-@media screen and (max-width: 750px) {
-  .card {
-    min-height: auto;
-    max-height: auto;
-    padding-bottom: 4rem;
-  }
-
-  .description-tiny {
-    font-size: 1.8rem;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  h2 {
-    color: $font-color-bone;
-    font-size: 2rem;
-    margin-top: 1rem;
-    text-align: center;
-    margin-bottom: 1rem;
-  }
-
-  a {
-    color: $font-color-bone;
-    font-size: 1.8rem;
-    margin-top: 1rem;
-  }
 }

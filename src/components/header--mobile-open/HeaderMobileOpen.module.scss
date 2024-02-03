@@ -2,14 +2,8 @@
 
 .header-mobile--open {
   display: none;
-}
 
-@media screen and (max-width: 500px) {
-  .header-mobile--open {
-    border-bottom: 1px solid $font-color-blue;
-  }
-
-  .header-mobile--open {
+  @media screen and (max-width: 500px) {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,15 +16,16 @@
     position: sticky;
     top: 0;
     z-index: 9999;
+    border-bottom: 1px solid $font-color-blue;
 
     .nav-links-wrapper {
       display: flex;
+      flex-direction: column;
       gap: 0 5rem;
       list-style: none;
-      flex-direction: column;
       text-align: center;
       width: 100vw;
-      height: 100svh;
+      height: 100vh;
       padding-top: 20%;
     }
 
@@ -42,30 +37,30 @@
       font-size: 3rem;
       border-bottom: 1px solid $font-color-bone;
     }
-  }
 
-  .u-row {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    width: 100%;
-    margin: 2rem 0;
-  }
+    .u-row {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      width: 100%;
+      margin: 2rem 0;
+    }
 
-  .btn-open-modal,
-  .btn-close-modal {
-    height: 4rem;
-    width: 4rem;
-    margin-right: 2rem;
-    background-color: $font-color-bone;
-    color: $color-primary;
-    font-size: 3rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+    .btn-open-modal,
+    .btn-close-modal {
+      height: 4rem;
+      width: 4rem;
+      margin-right: 2rem;
+      background-color: $font-color-bone;
+      color: $color-primary;
+      font-size: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
-  .btn-close-modal:hover {
-    cursor: pointer;
+      &:hover {
+        cursor: pointer;
+      }
+    }
   }
 }

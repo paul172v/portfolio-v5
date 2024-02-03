@@ -21,17 +21,16 @@
     color: $font-color-bone;
     font-size: 3rem;
     border-bottom: 1px solid $font-color-bone;
+
+    &:hover {
+      cursor: pointer;
+      color: $font-color-blue;
+      border-bottom: 1px solid $font-color-blue;
+    }
   }
 
-  .nav-link:hover {
-    cursor: pointer;
-    color: $font-color-blue;
-    border-bottom: 1px solid $font-color-blue;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .header {
+  // Nested media query
+  @media screen and (max-width: 500px) {
     display: none;
   }
 }

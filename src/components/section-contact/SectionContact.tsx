@@ -1,45 +1,52 @@
 import React, { useState, useRef } from "react";
 import { Element } from "react-scroll";
-
 import classes from "./SectionContact.module.scss";
+import EmailMeForm from "./email-me-form/EmailMeForm"; // Import the EmailMeForm component
+
+enum EmailStatus {
+  Unsent,
+  Sending,
+  Sent,
+}
+
+type EmailFields = {
+  name: string | undefined;
+  email: string | undefined;
+  subject: string | undefined;
+  message: string | undefined;
+};
 
 const SectionContact: React.FC = () => {
-  const [emailSentStatus, setEmailSentStatus] = useState("unsent"); //// unsent, sending
+  const [emailSentStatus, setEmailSentStatus] = useState<EmailStatus>(
+    EmailStatus.Unsent
+  );
   const [showEmailMessage, setShowEmailMessage] = useState(false);
   const [emailMessageContent, setEmailMessageContent] = useState(
     "Something went wrong"
   );
 
-  //// Refs
   const nameRef = useRef<HTMLInputElement>(null);
   const emailRef = useRef<HTMLInputElement>(null);
   const subjectRef = useRef<HTMLInputElement>(null);
   const messageRef = useRef<HTMLTextAreaElement>(null);
 
-  //// Functions
-  const submitHandler = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setEmailSentStatus("sending");
+  const validateForm = () => {
+    return (
+      nameRef.current?.value &&
+      emailRef.current?.value &&
+      subjectRef.current?.value &&
+      messageRef.current?.value
+    );
+  };
 
-    const currentName = nameRef?.current?.value;
-    const currentEmail = emailRef?.current?.value;
-    const currentSubject = subjectRef?.current?.value;
-    const currentMessage = messageRef?.current?.value;
+  const resetForm = () => {
+    nameRef.current!.value = "";
+    emailRef.current!.value = "";
+    subjectRef.current!.value = "";
+    messageRef.current!.value = "";
+  };
 
-    if (!currentName || !currentEmail || !currentSubject || !currentMessage) {
-      setEmailSentStatus("unsent");
-      setShowEmailMessage(true);
-      setEmailMessageContent("All fields must be completed!");
-      return;
-    }
-
-    const emailFields = {
-      name: currentName,
-      email: currentEmail,
-      subject: currentSubject,
-      message: currentMessage,
-    };
-
+  const sendEmail = async (emailFields: EmailFields) => {
     try {
       const response = await fetch(
         "https://duke-of-gordon-menu-interface-d83c02c0eebd.herokuapp.com/api/v1/portfolio/send-email",
@@ -48,9 +55,7 @@ const SectionContact: React.FC = () => {
           mode: "cors",
           cache: "no-cache",
           credentials: "same-origin",
-          headers: {
-            "Content-Type": "application/json",
-          },
+          headers: { "Content-Type": "application/json" },
           redirect: "follow",
           referrerPolicy: "no-referrer",
           body: JSON.stringify(emailFields),
@@ -59,20 +64,37 @@ const SectionContact: React.FC = () => {
 
       const data = await response.json();
       if (data.status === "fail") {
-        setEmailSentStatus("unsent");
-        setShowEmailMessage(true);
         setEmailMessageContent("Failed to send email, please try again later");
       } else if (data.status === "success") {
-        setEmailSentStatus("unsent");
-        setShowEmailMessage(true);
         setEmailMessageContent("Email sent successfully");
-        setTimeout(() => {
-          setShowEmailMessage(false);
-        }, 5000);
+        setTimeout(() => setShowEmailMessage(false), 5000);
+        resetForm();
       }
     } catch (error) {
       console.error(error);
+    } finally {
+      setEmailSentStatus(EmailStatus.Unsent);
+      setShowEmailMessage(true);
     }
+  };
+
+  const submitHandler = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setEmailSentStatus(EmailStatus.Sending);
+
+    if (!validateForm()) {
+      setEmailSentStatus(EmailStatus.Unsent);
+      setShowEmailMessage(true);
+      setEmailMessageContent("All fields must be completed!");
+      return;
+    }
+
+    await sendEmail({
+      name: nameRef.current?.value,
+      email: emailRef.current?.value,
+      subject: subjectRef.current?.value,
+      message: messageRef.current?.value,
+    });
   };
 
   return (
@@ -80,36 +102,17 @@ const SectionContact: React.FC = () => {
       <Element name="anchor-contact" className="element">
         <h3>Contact</h3>
       </Element>
-      <form onSubmit={submitHandler}>
-        <label htmlFor="name">Sender Name:</label>
-        <input type="text" name="name" ref={nameRef} />
-        <label htmlFor="email">Sender Email:</label>
-        <input type="email" name="email" ref={emailRef} />
-        <label htmlFor="subject">Subject:</label>
-        <input type="text" name="subject" ref={subjectRef} />
-        <label htmlFor="message">Message:</label>
-        <textarea name="message" ref={messageRef} />
-        {emailSentStatus === "unsent" && (
-          <input
-            id={classes["btn-send-email"]}
-            type="submit"
-            value="Send Email"
-          />
-        )}
 
-        {emailSentStatus === "sending" && (
-          <input
-            id={classes["btn-send-email--sending"]}
-            type=""
-            defaultValue="Sending"
-          />
-        )}
-        {showEmailMessage === true && (
-          <p className={classes["email-error-message"]}>
-            {emailMessageContent}
-          </p>
-        )}
-      </form>
+      <EmailMeForm
+        emailSentStatus={emailSentStatus}
+        showEmailMessage={showEmailMessage}
+        emailMessageContent={emailMessageContent}
+        nameRef={nameRef}
+        emailRef={emailRef}
+        subjectRef={subjectRef}
+        messageRef={messageRef}
+        onSubmit={submitHandler}
+      />
     </section>
   );
 };

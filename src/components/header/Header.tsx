@@ -1,28 +1,34 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import { Link } from "react-scroll";
-
 import classes from "./Header.module.scss";
 
+interface NavLinkProps {
+  to: string;
+  children: ReactNode;
+}
+
+const NavLink: React.FC<NavLinkProps> = ({ to, children }) => (
+  <Link offset={-50} to={to} smooth={true} duration={1000}>
+    <button className={classes["nav-link"]}>{children}</button>
+  </Link>
+);
+
 const Header: React.FC = () => {
+  const navLinks = [
+    { name: "About", to: "anchor-about" },
+    { name: "Projects", to: "anchor-projects" },
+    { name: "Contact", to: "anchor-contact" },
+  ];
+
   return (
     <header className={classes.header}>
       <nav className={classes.nav}>
         <ul className={classes["nav-links-wrapper"]}>
-          <Link offset={-50} to="anchor-about" smooth={true} duration={1000}>
-            <li>
-              <button className={classes["nav-link"]}>About</button>
+          {navLinks.map((link) => (
+            <li key={link.to}>
+              <NavLink to={link.to}>{link.name}</NavLink>
             </li>
-          </Link>
-          <Link offset={-50} to="anchor-projects" smooth={true} duration={1000}>
-            <li>
-              <button className={classes["nav-link"]}>Projects</button>
-            </li>
-          </Link>
-          <Link offset={-50} to="anchor-contact" smooth={true} duration={1000}>
-            <li>
-              <button className={classes["nav-link"]}>Contact</button>
-            </li>
-          </Link>
+          ))}
         </ul>
       </nav>
     </header>

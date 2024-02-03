@@ -1,30 +1,43 @@
 import React from "react";
-
 import classes from "./SectionMyInfoMobile.module.scss";
+
+type TagName = keyof JSX.IntrinsicElements;
+
+const personalInfo = [
+  { type: "h1" as TagName, text: "Paul Harris" },
+  { type: "h1" as TagName, text: "Fullstack MERN Developer" },
+  { type: "h2" as TagName, text: "Based in Scotland" },
+  { type: "h2" as TagName, text: "Available for Work" },
+  { type: "h2" as TagName, text: "Able to relocate" },
+];
+
+const links = [
+  { href: "https://github.com/paul172v", text: "My GitHub" },
+  {
+    href: "https://www.linkedin.com/in/paul-harris-86677b1ba/",
+    text: "My LinkedIn",
+  },
+  // Uncomment or add other links as needed
+  // { href: '#', text: 'Send me an Email' },
+];
 
 const SectionMyInfoMobile: React.FC = () => {
   return (
     <section className={classes["section-my-info--mobile"]}>
-      <h1>Paul Harris</h1>
-      <h1>Fullstack MERN Developer</h1>
-      <h2>Based in Scotland</h2>
-      <h2>Available for Work</h2>
-      <h2>Able to relocate</h2>
-      <a
-        href="https://github.com/paul172v"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        My GitHub
-      </a>
-      <a
-        href="https://www.linkedin.com/in/paul-harris-86677b1ba/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        My LinkedIn
-      </a>
-      {/* <a href="#">Send me an Email</a> */}
+      {personalInfo.map((info, index) => {
+        const Tag: TagName = info.type;
+        return <Tag key={index}>{info.text}</Tag>;
+      })}
+      {links.map((link, index) => (
+        <a
+          key={index}
+          href={link.href}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {link.text}
+        </a>
+      ))}
     </section>
   );
 };

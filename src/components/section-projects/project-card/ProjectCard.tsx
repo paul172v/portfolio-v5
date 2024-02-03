@@ -1,83 +1,90 @@
 import React from "react";
-
 import classes from "./ProjectCard.module.scss";
 
-interface T {
+interface ProjectCardProps {
   photo: string;
   title: string;
   liveSiteLink: string;
-  liveSite2Link: string | null;
-  liveSiteLabel: string | null;
-  liveSite2Label: string | null;
+  liveSite2Link?: string | null;
+  liveSiteLabel?: string | null;
+  liveSite2Label?: string | null;
   gitFrontLink: string;
-  gitFront2Link: string | null;
-  gitFrontLabel: string | null;
-  gitFront2Label: string | null;
-  gitBack: string | null;
+  gitFront2Link?: string | null;
+  gitFrontLabel?: string | null;
+  gitFront2Label?: string | null;
+  gitBack?: string | null | undefined;
   keyFeatures: string[];
   description: string;
   descriptionSize: string;
 }
 
-const ProjectCard: React.FC<T> = (props) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({
+  photo,
+  title,
+  liveSiteLink,
+  liveSite2Link,
+  liveSiteLabel,
+  liveSite2Label,
+  gitFrontLink,
+  gitFront2Link,
+  gitFrontLabel,
+  gitFront2Label,
+  gitBack,
+  keyFeatures,
+  description,
+  descriptionSize,
+}) => {
+  const renderLink = (link: string, label: string) => (
+    <a href={link} target="_blank" rel="noopener noreferrer">
+      {label}
+    </a>
+  );
+
+  const getDescriptionClass = () => {
+    switch (descriptionSize) {
+      case "small":
+        return classes["description-small"];
+      case "tiny":
+        return classes["description-tiny"];
+      default:
+        return classes.description;
+    }
+  };
+
   return (
     <div className={classes.card}>
       <img
         className={classes.photo}
-        src={`/screenshots/${props.photo}`}
-        alt="website screenshot"
+        src={`/screenshots/${photo}`}
+        alt={`${title} screenshot`}
       />
-      <h2>{props.title}</h2>
-      {!props.liveSite2Link ? (
-        <a href={props.liveSiteLink} target="_blank">
-          Live Site
-        </a>
-      ) : (
+      <h2>{title}</h2>
+      {liveSite2Link ? (
         <>
-          <a href={props.liveSiteLink} target="_blank">
-            {props.liveSiteLabel}
-          </a>
-          <a href={props.liveSite2Link} target="_blank">
-            {props.liveSite2Label}
-          </a>
+          {renderLink(liveSiteLink, liveSiteLabel || "Live Site")}
+          {renderLink(liveSite2Link, liveSite2Label || "Live Site 2")}
         </>
-      )}
-      {!props.gitFront2Link ? (
-        <a href={props.gitFrontLink} target="_blank">
-          GitHub Frontend
-        </a>
       ) : (
-        <>
-          <a href={props.gitFrontLink} target="_blank">
-            {props.gitFrontLabel}
-          </a>
-          <a href={props.gitFront2Link} target="_blank">
-            {props.gitFront2Label}
-          </a>
-        </>
+        renderLink(liveSiteLink, "Live Site")
       )}
-      {props.gitBack && <a href={props.gitBack}>GitHub Backend</a>}
+      {gitFront2Link ? (
+        <>
+          {renderLink(gitFrontLink, gitFrontLabel || "GitHub Frontend")}
+          {renderLink(gitFront2Link, gitFront2Label || "GitHub Frontend 2")}
+        </>
+      ) : (
+        renderLink(gitFrontLink, "GitHub Frontend")
+      )}
+      {gitBack && renderLink(gitBack, "GitHub Backend")}
       <p className={classes["u-bold"]}>Key Features:</p>
       <ul className={classes["key-features"]}>
-        {props.keyFeatures.map((el) => (
-          <li className={classes.li} key={el}>
-            {el}
+        {keyFeatures.map((feature, index) => (
+          <li className={classes.li} key={index}>
+            {feature}
           </li>
         ))}
       </ul>
-      <p
-        className={
-          props.descriptionSize === "normal"
-            ? classes.description
-            : props.descriptionSize === "small"
-            ? classes["description-small"]
-            : props.descriptionSize === "tiny"
-            ? classes["description-tiny"]
-            : classes.description
-        }
-      >
-        {props.description}
-      </p>
+      <p className={getDescriptionClass()}>{description}</p>
     </div>
   );
 };

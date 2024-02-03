@@ -2,14 +2,8 @@
 
 .header-mobile--closed {
   display: none;
-}
 
-@media screen and (max-width: 500px) {
-  .header-mobile--closed {
-    border-bottom: 1px solid $font-color-blue;
-  }
-
-  .header-mobile--closed {
+  @media screen and (max-width: 500px) {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -20,29 +14,30 @@
     position: sticky;
     top: 0;
     z-index: 9999;
-  }
+    border-bottom: 1px solid $font-color-blue;
 
-  .u-row {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    width: 100%;
-    margin: 2rem 0;
-  }
+    .u-row {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      width: 100%;
+      margin: 2rem 0;
+    }
 
-  .btn-open-modal {
-    height: 4rem;
-    width: 4rem;
-    margin-right: 2rem;
-    background-color: $font-color-bone;
-    color: $color-primary;
-    font-size: 3rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+    .btn-open-modal {
+      height: 4rem;
+      width: 4rem;
+      margin-right: 2rem;
+      background-color: $font-color-bone;
+      color: $color-primary;
+      font-size: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
-  .btn-open-modal:hover {
-    cursor: pointer;
+      &:hover {
+        cursor: pointer;
+      }
+    }
   }
 }

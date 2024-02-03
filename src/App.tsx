@@ -1,7 +1,5 @@
 import { useState } from "react";
 
-// import { TbBrandSocketIo } from "react-icons/tb";
-
 import classes from "./App.module.scss";
 
 import HeaderMobileClosed from "./components/header--mobile-closed/HeaderMobileClosed";

@@ -1,66 +1,52 @@
 import React from "react";
 import { Link } from "react-scroll";
-
 import classes from "./HeaderMobileOpen.module.scss";
 
-const HeaderMobileOpen: React.FC<{ onCloseMobileNav: () => void }> = (
-  props
-) => {
+interface HeaderMobileOpenProps {
+  onCloseMobileNav: () => void;
+}
+
+interface NavLinkData {
+  name: string;
+  anchor: string;
+  offset: number;
+}
+
+const HeaderMobileOpen: React.FC<HeaderMobileOpenProps> = ({
+  onCloseMobileNav,
+}) => {
+  const navLinks: NavLinkData[] = [
+    { name: "Introduction", anchor: "anchor-introduction", offset: -780 },
+    { name: "About", anchor: "anchor-about", offset: -835 },
+    { name: "Projects", anchor: "anchor-projects", offset: -835 },
+    { name: "Contact", anchor: "anchor-contact", offset: -800 },
+  ];
+
   return (
     <header className={classes["header-mobile--open"]}>
       <div className={classes["u-row"]}>
         <button
           className={classes["btn-close-modal"]}
-          onClick={props.onCloseMobileNav}
+          onClick={onCloseMobileNav}
         >
           X
         </button>
       </div>
       <ul className={classes["nav-links-wrapper"]}>
-        <Link
-          offset={-780}
-          to="anchor-introduction"
-          smooth={true}
-          duration={1000}
-          onClick={props.onCloseMobileNav}
-        >
-          <li>
-            <button className={classes["nav-link"]}>Introduction</button>
-          </li>
-        </Link>
-        <Link
-          offset={-835}
-          to="anchor-about"
-          smooth={true}
-          duration={1000}
-          onClick={props.onCloseMobileNav}
-        >
-          <li>
-            <button className={classes["nav-link"]}>About</button>
-          </li>
-        </Link>
-        <Link
-          offset={-835}
-          to="anchor-projects"
-          smooth={true}
-          duration={1000}
-          onClick={props.onCloseMobileNav}
-        >
-          <li>
-            <button className={classes["nav-link"]}>Projects</button>
-          </li>
-        </Link>
-        <Link
-          offset={-800}
-          to="anchor-contact"
-          smooth={true}
-          duration={1000}
-          onClick={props.onCloseMobileNav}
-        >
-          <li>
-            <button className={classes["nav-link"]}>Contact</button>
-          </li>
-        </Link>
+        {navLinks.map(({ name, anchor, offset }) => (
+          <Link
+            key={anchor}
+            offset={offset}
+            to={anchor}
+            smooth={true}
+            duration={1000}
+            onClick={onCloseMobileNav}
+          >
+            <li>
+              <button className={classes["nav-link"]}>{name}</button>
+            </li>
+          </Link>
+        ))}
       </ul>
     </header>
   );
