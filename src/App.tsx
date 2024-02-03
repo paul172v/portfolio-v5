@@ -28,12 +28,10 @@ function App() {
     <div className={classes.background}>
       <div className={classes["frame-wrapper"]}>
         <div className={classes.frame}>
-          {!mobileNavIsOpen && (
-            <HeaderMobileClosed onOpenMobileNav={openMobileNavHandler} />
-          )}
-
-          {mobileNavIsOpen && (
+          {mobileNavIsOpen ? (
             <HeaderMobileOpen onCloseMobileNav={closeMobileNavHandler} />
+          ) : (
+            <HeaderMobileClosed onOpenMobileNav={openMobileNavHandler} />
           )}
 
           <Header />
