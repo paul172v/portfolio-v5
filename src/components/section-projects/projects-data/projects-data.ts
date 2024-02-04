@@ -1,7 +1,7 @@
 export const projectsData = [
   {
     id: "shutter-collective",
-    photo: "shutter-collective.png",
+    photo: "shutter-collective_v2.png",
     title: "Shutter Collective",
     liveSiteLink: "https://shutter-collective.netlify.app/",
     liveSite2Link: null,
