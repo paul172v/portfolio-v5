@@ -50,12 +50,14 @@ const aboutSections: SectionData[] = [
     content: (
       <p>
         I believe in lifelong learning and have recently expanded my skill set
-        to include Node.js. I'm currently honing my abilities by creating
-        full-stack applications that solve real-world problems. I am also
-        working to improve my use of AI like ChatGPT, exploring the new features
-        that ChatGPT 4 has introduced and learning better ways to write prompts.
-        Lastly, I have recently begun using Brilliant.org to sharpen my math
-        skills.
+        to include Node.js and TypeScript. I'm currently honing my abilities by
+        creating full-stack applications that solve real-world problems. In
+        doing so I am also intending to learn other libraries and technical
+        disciplines such as Socket.io and integrating AI as and when it is
+        required. Lastly, I am working to improve my use of AI tools like
+        ChatGPT and DaVinci AI by experimenting and studying better ways to
+        write prompts as these tools are inevitably going to become a standard
+        part of a developer's toolkit going forward.
       </p>
     ),
   },
