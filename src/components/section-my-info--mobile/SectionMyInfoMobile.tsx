@@ -5,7 +5,7 @@ type TagName = keyof JSX.IntrinsicElements;
 
 const personalInfo = [
   { type: "h1" as TagName, text: "Paul Harris" },
-  { type: "h1" as TagName, text: "Fullstack MERN Developer" },
+  { type: "h1" as TagName, text: "Full Stack MERN Developer" },
   { type: "h2" as TagName, text: "Based in Scotland" },
   { type: "h2" as TagName, text: "Available for Work" },
   { type: "h2" as TagName, text: "Able to relocate" },

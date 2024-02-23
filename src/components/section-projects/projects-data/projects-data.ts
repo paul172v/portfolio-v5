@@ -16,7 +16,7 @@ export const projectsData = [
       "React.js",
       "TypeScript",
       "React-Scroll",
-      "SCSS",
+      "Sass",
       "Responsive Design",
       "Modal Gallery",
     ],
@@ -40,10 +40,10 @@ export const projectsData = [
       "Node.js",
       "Responsive Design",
       "Filter",
-      "SCSS",
+      "Sass",
     ],
     description:
-      "This is an online menu for a restaurant, based on a real menu from a real restaurant. It gets all of the different menus as arrays from a backend and database shared with 'The View Interface' meaning the menu can be updated elsewhere. Once it gets the menu arrays the site will automatically generate itself based on the information it has thanks to conditional rendering and good use of components. This project is light on hooks but I have coded a filter that will only show menu items that meet selected dietary requirements.",
+      "This is an online menu for a restaurant, based on a real menu from a real restaurant. It gets all of the different menus as arrays from a back-end and database shared with 'The View Interface' meaning the menu can be updated elsewhere. Once it gets the menu arrays the site will automatically generate itself based on the information it has thanks to conditional rendering and good use of components. This project is light on hooks but I have coded a filter that will only show menu items that meet selected dietary requirements.",
     descriptionSize: "normal",
   },
   {
@@ -59,7 +59,7 @@ export const projectsData = [
     keyFeatures: [
       "FullStack",
       "React.js",
-      "SCSS",
+      "Sass",
       "Good use of Hooks and Props",
       "Conditional Rendering",
       "Node.js",
@@ -68,7 +68,7 @@ export const projectsData = [
       "CRUD Operations",
     ],
     description:
-      "This is the sister site of The View Online Menus. It is basically a giant form that will allow users to update the menu arrays on a database. This project made frequent use of useState, useReducer, useEffect, useRef, useContext and the usePortal hooks. As well as good use of components and props. The backend uses Express and Mongoose, does basic CRUD operations and also has some error handling and a handler factory to make the CRUD operations more streamlined. It uses over 20 models and the routes and controllers are divided between the main, kids and drinks menus. This was my first time making a 'proper' fullstack application but I am pleased with the results.",
+      "This is the sister site of The View Online Menus. It is basically a giant form that will allow users to update the menu arrays on a database. This project made frequent use of useState, useReducer, useEffect, useRef, useContext and the usePortal hooks. As well as good use of components and props. The back-end uses Express and Mongoose, does basic CRUD operations and also has some error handling and a handler factory to make the CRUD operations more streamlined. It uses over 20 models and the routes and controllers are divided between the main, kids and drinks menus. This was my first time making a 'proper' fullstack application but I am pleased with the results.",
     descriptionSize: "small",
   },
   {
@@ -82,8 +82,8 @@ export const projectsData = [
     gitFrontLink:
       "https://github.com/paul172v/duke-of-gordon-menu-interface--frontend",
     gitFront2Link: "https://github.com/paul172v/duke-of-gordon-menu",
-    gitFrontLabel: "GitHub - Menu Interface",
-    gitFront2Label: "GitHub - Online Menu",
+    gitFrontLabel: "GitHub - Menu Interface Front-End",
+    gitFront2Label: "GitHub - Online Menu Front-End",
     gitBack:
       "https://github.com/paul172v/duke-of-gordon-menu-interface--backend",
     keyFeatures: [
@@ -98,7 +98,7 @@ export const projectsData = [
       "Keyframe Animations",
     ],
     description:
-      "This is the first web app I made after taking a full TypeScript course. I was mainly getting used to declaring types in vanilla JS, React and Node with this project but interfaces came up a lot for declaring generic types. This app is otherwise pretty standard. I chose another menu & interface because I wanted to focus on getting used to TypeScript rather than figuring out a lot of logic or special features. There is a bit of authentication with JSON Web Tokens, validation and error handling on both the front and back end and I used bcrypt to hash passwords. For the backend I added custom error handling and a  handler factory. For the frontend interface I used some keyframe animations for aesthetics and I used many of the fundamental hooks and conditional rendering for this project. The online menu is quite basic but that is because it is a recreation of a physical paper menu.",
+      "This is the first web app I made after taking a full TypeScript course. I was mainly getting used to declaring types in vanilla JS, React and Node with this project but interfaces came up a lot for declaring generic types. This app is otherwise pretty standard. I chose another menu & interface because I wanted to focus on getting used to TypeScript rather than figuring out a lot of logic or special features. There is a bit of authentication with JSON Web Tokens, validation and error handling on both the front and back end and I used bcrypt to hash passwords. For the back-end I added custom error handling and a  handler factory. For the frontend interface I used some keyframe animations for aesthetics and I used many of the fundamental hooks and conditional rendering for this project. The online menu is quite basic but that is because it is a recreation of a physical paper menu.",
     descriptionSize: "tiny",
   },
 ];

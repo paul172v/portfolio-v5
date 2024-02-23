@@ -69,13 +69,13 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       )}
       {gitFront2Link ? (
         <>
-          {renderLink(gitFrontLink, gitFrontLabel || "GitHub Frontend")}
-          {renderLink(gitFront2Link, gitFront2Label || "GitHub Frontend 2")}
+          {renderLink(gitFrontLink, gitFrontLabel || "GitHub Front-End")}
+          {renderLink(gitFront2Link, gitFront2Label || "GitHub Front-End 2")}
         </>
       ) : (
-        renderLink(gitFrontLink, "GitHub Frontend")
+        renderLink(gitFrontLink, "GitHub Front-End")
       )}
-      {gitBack && renderLink(gitBack, "GitHub Backend")}
+      {gitBack && renderLink(gitBack, "GitHub Back-End")}
       <p className={classes["u-bold"]}>Key Features:</p>
       <ul className={classes["key-features"]}>
         {keyFeatures.map((feature, index) => (
