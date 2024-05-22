@@ -22,7 +22,7 @@ const SectionHero: React.FC = () => {
       <div className={classes["my-info-box"]}>
         <img className={classes.logo} src="background.png" alt="logo" />
         <h1>Paul Harris</h1>
-        <h1>Full Stack MERN Developer</h1>
+        <h1>Front End MERN Developer</h1>
         <h2>Based in Scotland</h2>
         <h2>Available for Work</h2>
         <h2>Able to relocate</h2>

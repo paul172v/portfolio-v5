@@ -16,10 +16,10 @@ const HeaderMobileOpen: React.FC<HeaderMobileOpenProps> = ({
   onCloseMobileNav,
 }) => {
   const navLinks: NavLinkData[] = [
-    { name: "Introduction", anchor: "anchor-introduction", offset: -780 },
-    { name: "About", anchor: "anchor-about", offset: -835 },
-    { name: "Projects", anchor: "anchor-projects", offset: -835 },
-    { name: "Contact", anchor: "anchor-contact", offset: -800 },
+    { name: "Introduction", anchor: "anchor-introduction", offset: -920 },
+    { name: "About", anchor: "anchor-about", offset: -950 },
+    { name: "Projects", anchor: "anchor-projects", offset: -970 },
+    { name: "Contact", anchor: "anchor-contact", offset: -930 },
   ];
 
   return (
