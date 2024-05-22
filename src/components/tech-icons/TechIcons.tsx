@@ -33,8 +33,8 @@ const TechIcons = [
   { icon: <FaNode className={classes.icon} />, label: "Node.js" },
   { icon: <SiExpress className={classes.icon} />, label: "Express" },
   { icon: <SiMongodb className={classes.icon} />, label: "MongoDB" },
-  { icon: <GrMysql className={classes.icon} />, label: "MySQL" },
-  { icon: <SiSocketdotio className={classes.icon} />, label: "Socket.io" },
+  // { icon: <GrMysql className={classes.icon} />, label: "MySQL" },
+  // { icon: <SiSocketdotio className={classes.icon} />, label: "Socket.io" },
   { icon: <FaGithub className={classes.icon} />, label: "GitHub" },
 
   {
