@@ -24,6 +24,26 @@ export const projectsData = [
       "This is a basic single page website for a fictional photography group based in Glasgow, Scotland. It's not complicated but is responsive and uses simple components and props. It uses a library called react-scroll to scroll to various anchor points. This was a website I made after taking a sample introduction to TypeScript from a course covering a different topic.",
     descriptionSize: "normal",
   },
+
+  {
+    id: "golden-dragon",
+    photo: "golden-dragon.png",
+    title: "Golden Dragon",
+    liveSiteLink: "https://golden-dragon-aberfeldy.netlify.app/",
+    liveSite2Link: null,
+    liveSiteLabel: null,
+    liveSite2Label: null,
+    gitFrontLink: "https://github.com/paul172v/golden-dragon-aberfeldy",
+    gitFront2Link: null,
+    gitFrontLabel: null,
+    gitFront2Label: null,
+    gitBack: null,
+    keyFeatures: ["React.js", "TypeScript", "Responsive Design", "Leaflet Map"],
+    description:
+      "This is a one page brochure website for a Chinese takeaway, made with React/TypeScript and includes a map from the Leaflet library. It is fully responsive and all of the images were made using ChatGPT.",
+    descriptionSize: "normal",
+  },
+
   {
     id: "view-online-menus",
     photo: "view-menus.png",
