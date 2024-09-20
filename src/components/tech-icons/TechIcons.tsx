@@ -15,8 +15,9 @@ import {
   // SiSocketdotio,
   SiLeaflet,
   // SiRedux,
+  SiJest,
 } from "react-icons/si";
-import { GrMysql } from "react-icons/gr";
+// import { GrMysql } from "react-icons/gr";
 
 import classes from "./TechIcons.module.scss";
 
@@ -33,8 +34,9 @@ const TechIcons = [
   { icon: <FaNode className={classes.icon} />, label: "Node.js" },
   { icon: <SiExpress className={classes.icon} />, label: "Express" },
   { icon: <SiMongodb className={classes.icon} />, label: "MongoDB" },
-  { icon: <GrMysql className={classes.icon} />, label: "MySQL" },
+  // { icon: <GrMysql className={classes.icon} />, label: "MySQL" },
   // { icon: <SiSocketdotio className={classes.icon} />, label: "Socket.io" },
+  { icon: <SiJest className={classes.icon} />, label: "Jest" },
   { icon: <FaGithub className={classes.icon} />, label: "GitHub" },
 
   {

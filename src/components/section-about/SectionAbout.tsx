@@ -35,13 +35,13 @@ const aboutSections: SectionData[] = [
     title: "Skills & Technologies",
     content: (
       <ul>
-        <li>Front-end: HTML, CSS, JavaScript, React.js, TypeScript</li>
-        <li>Back-end: Node.js</li>
+        <li>Front-end: HTML, CSS, JavaScript, React.js, TypeScript, SASS</li>
+        <li>Back-end: Node.js, Express, Mongoose</li>
         <li>
           Full Stack Applications: Proficient in building end-to-end web
           solutions
         </li>
-        <li>AI: ChatGPT</li>
+        <li>Other Skills: GitHub, JEST, ChatGPT</li>
       </ul>
     ),
   },
@@ -50,14 +50,13 @@ const aboutSections: SectionData[] = [
     content: (
       <p>
         I believe in lifelong learning and have recently expanded my skill set
-        to include Node.js and TypeScript. I'm currently honing my abilities by
+        to include TypeScript and JEST. I'm currently honing my abilities by
         creating full-stack applications that solve real-world problems. In
         doing so I am also intending to learn other libraries and technical
-        disciplines such as Socket.io and integrating AI as and when it is
-        required. Lastly, I am working to improve my use of AI tools like
-        ChatGPT and DaVinci AI by experimenting and studying better ways to
-        write prompts as these tools are inevitably going to become a standard
-        part of a developer's toolkit going forward.
+        disciplines such as Socket.io and Wordpress. Lastly, I am working to
+        improve my use of AI tools like ChatGPT and DaVinci AI by experimenting
+        and studying better ways to write prompts as these tools are inevitably
+        going to become a standard part of a developer's toolkit going forward.
       </p>
     ),
   },
@@ -66,8 +65,9 @@ const aboutSections: SectionData[] = [
     content: (
       <p>
         I'm actively seeking my first role in the industry and am available to
-        start immediately. Open to both remote work and relocation, I'm flexible
-        and willing to adapt to different work environments.
+        start within one month's notice. Open to both remote work and
+        relocation, I'm flexible and willing to adapt to different work
+        environments.
       </p>
     ),
   },
