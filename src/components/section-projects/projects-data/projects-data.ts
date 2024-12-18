@@ -28,7 +28,7 @@ export const projectsData = [
     id: "katrina-holt-photography",
     photo: "katrina-holt-photography.png",
     title: "Katrina Holt Photography",
-    liveSiteLink: "https://katrina-holt-photography.netlify.app/about-me",
+    liveSiteLink: "https://katrina-holt-photography.netlify.app/",
     liveSite2Link: null,
     liveSiteLabel: null,
     liveSite2Label: null,
