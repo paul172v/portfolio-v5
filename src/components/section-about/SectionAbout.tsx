@@ -35,13 +35,16 @@ const aboutSections: SectionData[] = [
     title: "Skills & Technologies",
     content: (
       <ul>
-        <li>Front-end: HTML, CSS, JavaScript, React.js, TypeScript, SASS</li>
+        <li>
+          Front-end: HTML, CSS, JavaScript, React.js, TypeScript, SASS,
+          Bootstrap
+        </li>
         <li>Back-end: Node.js, Express, Mongoose</li>
         <li>
           Full Stack Applications: Proficient in building end-to-end web
           solutions
         </li>
-        <li>Other Skills: GitHub, JEST, ChatGPT</li>
+        <li>Other Skills: GitHub, JEST, ChatGPT, SEO</li>
       </ul>
     ),
   },
@@ -50,13 +53,13 @@ const aboutSections: SectionData[] = [
     content: (
       <p>
         I believe in lifelong learning and have recently expanded my skill set
-        to include TypeScript and JEST. I'm currently honing my abilities by
-        creating full-stack applications that solve real-world problems. In
-        doing so I am also intending to learn other libraries and technical
-        disciplines such as Socket.io and Wordpress. Lastly, I am working to
-        improve my use of AI tools like ChatGPT and DaVinci AI by experimenting
-        and studying better ways to write prompts as these tools are inevitably
-        going to become a standard part of a developer's toolkit going forward.
+        to include JEST. I'm currently honing my abilities by creating
+        full-stack applications that solve real-world problems. In doing so I am
+        also intending to learn other libraries and technical disciplines such
+        as Wordpress. Lastly, I am working to improve my use of AI tools like
+        ChatGPT by experimenting and studying better ways to write prompts and
+        master the new features as these tools are inevitably going to become a
+        standard part of a developer's toolkit going forward.
       </p>
     ),
   },

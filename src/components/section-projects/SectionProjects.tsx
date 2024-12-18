@@ -12,7 +12,7 @@ interface IProject {
   liveSite2Link?: string | null;
   liveSiteLabel?: string | null;
   liveSite2Label?: string | null;
-  gitFrontLink: string;
+  gitFrontLink: string | null;
   gitFront2Link?: string | null;
   gitFrontLabel?: string | null;
   gitFront2Label?: string | null;

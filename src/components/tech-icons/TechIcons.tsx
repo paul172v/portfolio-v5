@@ -5,6 +5,7 @@ import {
   FaNode,
   FaGithub,
   FaSass,
+  FaBootstrap,
 } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import {
@@ -17,6 +18,7 @@ import {
   // SiRedux,
   SiJest,
 } from "react-icons/si";
+import { PiMagnifyingGlassDuotone } from "react-icons/pi";
 // import { GrMysql } from "react-icons/gr";
 
 import classes from "./TechIcons.module.scss";
@@ -28,17 +30,13 @@ const TechIcons = [
   { icon: <FaSass className={classes.icon} />, label: "Sass" },
   { icon: <FaReact className={classes.icon} />, label: "React" },
   { icon: <SiReactrouter className={classes.icon} />, label: "React Router" },
-  // { icon: <SiRedux className={classes.icon} />, label: "Redux" },
   { icon: <SiLeaflet className={classes.icon} />, label: "Leaflet" },
   { icon: <SiTypescript className={classes.icon} />, label: "TypeScript" },
   { icon: <FaNode className={classes.icon} />, label: "Node.js" },
   { icon: <SiExpress className={classes.icon} />, label: "Express" },
   { icon: <SiMongodb className={classes.icon} />, label: "MongoDB" },
-  // { icon: <GrMysql className={classes.icon} />, label: "MySQL" },
-  // { icon: <SiSocketdotio className={classes.icon} />, label: "Socket.io" },
   { icon: <SiJest className={classes.icon} />, label: "Jest" },
   { icon: <FaGithub className={classes.icon} />, label: "GitHub" },
-
   {
     icon: (
       <img
@@ -50,9 +48,10 @@ const TechIcons = [
     ),
     label: "ChatGPT",
   },
-  // Uncomment or add other icons as needed
+  { icon: <PiMagnifyingGlassDuotone className={classes.icon} />, label: "SEO" },
+  { icon: <FaBootstrap className={classes.icon} />, label: "Bootstrap" },
+  // { icon: <GrMysql className={classes.icon} />, label: "MySQL" },
   // { icon: <FaNpm />, label: 'npm' },
-  // { icon: <SiLeaflet />, label: 'Leaflet' },
   // { icon: <SiRedux />, label: 'Redux' },
   // { icon: <TbBrandSocketIo />, label: 'Socket.io' },
 ];

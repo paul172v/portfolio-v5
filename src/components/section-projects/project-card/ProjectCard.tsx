@@ -8,7 +8,7 @@ interface ProjectCardProps {
   liveSite2Link?: string | null;
   liveSiteLabel?: string | null;
   liveSite2Label?: string | null;
-  gitFrontLink: string;
+  gitFrontLink: string | null;
   gitFront2Link?: string | null;
   gitFrontLabel?: string | null;
   gitFront2Label?: string | null;
@@ -59,6 +59,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         alt={`${title} screenshot`}
       />
       <h2>{title}</h2>
+
       {liveSite2Link ? (
         <>
           {renderLink(liveSiteLink, liveSiteLabel || "Live Site")}
@@ -67,13 +68,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       ) : (
         renderLink(liveSiteLink, "Live Site")
       )}
-      {gitFront2Link ? (
-        <>
-          {renderLink(gitFrontLink, gitFrontLabel || "GitHub Front-End")}
-          {renderLink(gitFront2Link, gitFront2Label || "GitHub Front-End 2")}
-        </>
-      ) : (
-        renderLink(gitFrontLink, "GitHub Front-End")
+
+      {gitFrontLink && (
+        <>{renderLink(gitFrontLink, gitFrontLabel || "GitHub Front-End")}</>
+      )}
+      {gitFront2Link && (
+        <>{renderLink(gitFront2Link, gitFront2Label || "GitHub Front-End 2")}</>
       )}
       {gitBack && renderLink(gitBack, "GitHub Back-End")}
       <p className={classes["u-bold"]}>Key Features:</p>

@@ -20,7 +20,11 @@ const SectionHero: React.FC = () => {
     <section className={classes.hero}>
       <Element name="anchor-introduction" className="element"></Element>
       <div className={classes["my-info-box"]}>
-        <img className={classes.logo} src="background.png" alt="logo" />
+        <img
+          className={classes.logo}
+          src="background.png"
+          alt="A phone and tablet sitting on a desk displaying a sleek website design."
+        />
         <h1>Paul Harris</h1>
         <h1>Front End MERN Developer</h1>
         <h2>Based in Scotland</h2>
@@ -47,7 +51,11 @@ const SectionHero: React.FC = () => {
         ))}
         ;
       </div>
-      <img className={classes.avatar} src="/avatar.png" alt="avatar" />
+      <img
+        className={classes.avatar}
+        src="/avatar.png"
+        alt="An illustrated image of Paul Harris."
+      />
     </section>
   );
 };
