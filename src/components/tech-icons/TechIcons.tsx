@@ -6,6 +6,8 @@ import {
   FaGithub,
   FaSass,
   FaBootstrap,
+  FaPhp,
+  FaPython,
 } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import {
@@ -19,7 +21,7 @@ import {
   SiJest,
 } from "react-icons/si";
 import { PiMagnifyingGlassDuotone } from "react-icons/pi";
-// import { GrMysql } from "react-icons/gr";
+import { GrMysql } from "react-icons/gr";
 
 import classes from "./TechIcons.module.scss";
 
@@ -35,7 +37,7 @@ const TechIcons = [
   { icon: <FaNode className={classes.icon} />, label: "Node.js" },
   { icon: <SiExpress className={classes.icon} />, label: "Express" },
   { icon: <SiMongodb className={classes.icon} />, label: "MongoDB" },
-  { icon: <SiJest className={classes.icon} />, label: "Jest" },
+  { icon: <FaPython className={classes.icon} />, label: "Python" },
   { icon: <FaGithub className={classes.icon} />, label: "GitHub" },
   {
     icon: (
@@ -49,8 +51,10 @@ const TechIcons = [
     label: "ChatGPT",
   },
   { icon: <PiMagnifyingGlassDuotone className={classes.icon} />, label: "SEO" },
-  { icon: <FaBootstrap className={classes.icon} />, label: "Bootstrap" },
+  // { icon: <FaBootstrap className={classes.icon} />, label: "Bootstrap" },
+  // { icon: <FaPhp className={classes.icon} />, label: "php" },
   // { icon: <GrMysql className={classes.icon} />, label: "MySQL" },
+  // { icon: <SiJest className={classes.icon} />, label: "Jest" },
   // { icon: <FaNpm />, label: 'npm' },
   // { icon: <SiRedux />, label: 'Redux' },
   // { icon: <TbBrandSocketIo />, label: 'Socket.io' },
