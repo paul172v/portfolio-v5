@@ -36,7 +36,7 @@ const aboutSections: SectionData[] = [
     content: (
       <ul>
         <li>Front-end: HTML, CSS, JavaScript, React.js, TypeScript, SASS</li>
-        <li>Back-end: Node.js, Express, Mongoose, Python</li>
+        <li>Back-end: Node.js, Express, Mongoose</li>
         <li>
           Full Stack Applications: Proficient in building end-to-end web
           solutions
@@ -49,16 +49,13 @@ const aboutSections: SectionData[] = [
     title: "Continuous Learning",
     content: (
       <p>
-        I believe in lifelong learning and have recently expanded my skill set
-        to include Python, with the intention of later delving into machine
-        learning and AI. I'm currently honing my abilities by creating
-        full-stack applications that solve real-world problems. I am also
-        consistently working to improve my understanding and expertise with AI
-        tools like ChatGPT. I have a taken a course which explains a little
-        about how LLMs work under the hood, effective chat prompting techniques,
-        and am always experiment with the latest tools like AI agents, image
-        generation and sora and incorporating them into my daily activities and
-        projects.
+        I am always trying to learn something new and expand my skillset. I have
+        a good grasp of the MERN stack and TypeScript, and have already built
+        several full-stack projects for real businesses. I have taken courses on
+        how chatGPT works behind the scenes and effective chat-prompting to
+        better understanding an important new technology. I am also currently
+        studying Python and hope to later branch out into AI development such as
+        machine learning and agentic AI.
       </p>
     ),
   },
@@ -67,7 +64,7 @@ const aboutSections: SectionData[] = [
     content: (
       <p>
         I'm actively seeking my first role in the industry and am available to
-        start within one month's notice. Open to both remote work and
+        start within one month's notice. I am open to both remote work and
         relocation, I'm flexible and willing to adapt to different work
         environments.
       </p>

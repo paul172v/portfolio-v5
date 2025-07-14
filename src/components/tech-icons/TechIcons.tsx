@@ -5,9 +5,9 @@ import {
   FaNode,
   FaGithub,
   FaSass,
-  FaBootstrap,
-  FaPhp,
-  FaPython,
+  // FaBootstrap,
+  // FaPhp,
+  // FaPython,
 } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import {
@@ -18,10 +18,10 @@ import {
   // SiSocketdotio,
   SiLeaflet,
   // SiRedux,
-  SiJest,
+  // SiJest,
 } from "react-icons/si";
 import { PiMagnifyingGlassDuotone } from "react-icons/pi";
-import { GrMysql } from "react-icons/gr";
+// import { GrMysql } from "react-icons/gr";
 
 import classes from "./TechIcons.module.scss";
 
@@ -37,7 +37,7 @@ const TechIcons = [
   { icon: <FaNode className={classes.icon} />, label: "Node.js" },
   { icon: <SiExpress className={classes.icon} />, label: "Express" },
   { icon: <SiMongodb className={classes.icon} />, label: "MongoDB" },
-  { icon: <FaPython className={classes.icon} />, label: "Python" },
+  // { icon: <FaPython className={classes.icon} />, label: "Python" },
   { icon: <FaGithub className={classes.icon} />, label: "GitHub" },
   {
     icon: (
