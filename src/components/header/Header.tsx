@@ -17,7 +17,6 @@ const Header: React.FC = () => {
   const navLinks = [
     { name: "About", to: "anchor-about" },
     { name: "Projects", to: "anchor-projects" },
-    { name: "Contact", to: "anchor-contact" },
   ];
 
   return (

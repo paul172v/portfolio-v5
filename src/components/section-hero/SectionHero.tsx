@@ -44,6 +44,7 @@ const SectionHero: React.FC = () => {
         >
           My LinkedIn
         </a>
+        <a href="mailto:admin@paul172v-portfolio.co.uk">Email Me</a>
       </div>
       <div className={classes["skills-icons-box"]}>
         {TechIcons.map((data: IconWrapperProps, index: number) => (

@@ -10,7 +10,6 @@ import SectionMyInfoMobile from "./components/section-my-info--mobile/SectionMyI
 import SectionSkillsMobile from "./components/section-skills--mobile/SectionSkillsMobile";
 import SectionAbout from "./components/section-about/SectionAbout";
 import SectionProjects from "./components/section-projects/SectionProjects";
-import SectionContact from "./components/section-contact/SectionContact";
 
 function App() {
   const [mobileNavIsOpen, setMobileNavIsOpen] = useState(false);
@@ -40,7 +39,6 @@ function App() {
           <SectionSkillsMobile />
           <SectionAbout />
           <SectionProjects />
-          <SectionContact />
         </div>
       </div>
     </div>

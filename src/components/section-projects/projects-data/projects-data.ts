@@ -68,7 +68,7 @@ export const projectsData = [
       "Node/Express/MongoDB",
       "Full-Stack",
       "User Authentication",
-      "Usr Interface",
+      "User Interface",
       "Responsive Design",
     ],
     description:
@@ -97,6 +97,44 @@ export const projectsData = [
     ],
     description:
       "This web app is a customer-side online map of the Moness resort showing the location of the hotel reception and various facilities but it's primary function is to allow guests to find their cottage easily on the resort grounds. This app was made using React/TypeScript and the Leaflet.js Library. It is currently being used by the hotel housekeeping staff for the same purpose as it has proved more convenient than the paper maps they were using previously.",
+    descriptionSize: "normal",
+  },
+
+  {
+    id: "customGPT",
+    photo: "customGPT.png",
+    title: "Moness Blog CustomGPT",
+    liveSiteLink:
+      "https://chatgpt.com/g/g-686ec718f7408191b0ebbad3081b5aaf-moness-blog-assistant",
+    liveSite2Link: "https://www.facebook.com/monessresort",
+    liveSiteLabel: "CustomGPT",
+    liveSite2Label: "Moness Facebook Page",
+    gitFrontLink: null,
+    gitFront2Link: null,
+    gitFrontLabel: null,
+    gitFront2Label: null,
+    gitBack: null,
+    keyFeatures: ["CustomGPT prompting"],
+    description:
+      "This CustomGPT chatbot mimics the writing style and format of the Moness Facebook blog posts, allowing staff to quickly and easily generate content for the blog even without a copywriting skill-set. It takes minimal information from staff such as subject, event dates, entry fees and other criteria including links and incorporates them into a professional and authentic sounding blog post in the style and format of previous blog posts made by Moness staff.",
+    descriptionSize: "normal",
+  },
+  {
+    id: "mandarin-app",
+    photo: "mandarin-app.png",
+    title: "Mandarin Study App",
+    liveSiteLink: "https://172v-mandarin-flashcard-app.netlify.app/",
+    liveSite2Link: null,
+    liveSiteLabel: "Front-End",
+    liveSite2Label: null,
+    gitFrontLink: "https://github.com/paul172v/172v-mandarin-flashcard-app",
+    gitFront2Link: null,
+    gitFrontLabel: null,
+    gitFront2Label: null,
+    gitBack: null,
+    keyFeatures: ["React/TypeScript", "Bootstrap", "Responsive Design"],
+    description:
+      "I've been studying mandarin using the audiobook 'Learn Mandarin Chinese with Paul Noble for Beginners - Complete Course', I made this flashcard app to help me study the hanzi & pinyin components since the audiobook only teaches the spoken language. It is the first app I have ever created to help myself with a real-world problem and it's been super helpful.",
     descriptionSize: "normal",
   },
 ];

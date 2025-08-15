@@ -17,8 +17,7 @@ const links = [
     href: "https://www.linkedin.com/in/paul-harris-86677b1ba/",
     text: "My LinkedIn",
   },
-  // Uncomment or add other links as needed
-  // { href: '#', text: 'Send me an Email' },
+  { href: "mailto:admin@paul172v-portfolio.co.uk", text: "Email Me" },
 ];
 
 const SectionMyInfoMobile: React.FC = () => {
