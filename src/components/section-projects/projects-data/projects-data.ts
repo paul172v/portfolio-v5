@@ -2,7 +2,7 @@ export const projectsData = [
   {
     id: "moness-table-reservation",
     photo: "moness-table-reservation.png",
-    title: "Moness Table Reservation",
+    title: "Moness Table Reservation (1/3)",
     liveSiteLink: "https://172v-moness-table-reservation.netlify.app/",
     liveSite2Link: null,
     liveSiteLabel: "Front-End",
@@ -28,7 +28,7 @@ export const projectsData = [
   {
     id: "moness-flemmyng-menu",
     photo: "moness-flemmyng-menu.png",
-    title: "Moness Flemmyng Menu",
+    title: "Moness Flemmyng Menu (2/3)",
     liveSiteLink: "https://172v-moness-menu.netlify.app/",
     liveSite2Link: null,
     liveSiteLabel: "Front-End",
@@ -53,7 +53,7 @@ export const projectsData = [
   {
     id: "moness-staff-portal",
     photo: "moness-staff-portal.png",
-    title: "Moness Staff Portal",
+    title: "Moness Staff Portal (3/3)",
     liveSiteLink: "https://172v-moness-staff-portal.netlify.app/",
     liveSite2Link: null,
     liveSiteLabel: "Front-End",
